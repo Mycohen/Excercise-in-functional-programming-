@@ -1,5 +1,7 @@
 import math
 import ast
+import string
+
 
 # Exercise 1.1
 def check_correct_triangle():
@@ -16,7 +18,7 @@ def check_correct_triangle():
 
 
 # Exercise 1.2
-def getNumber(param):
+def getNumber(param: string):
     print(param)
     return float(input(param))
 
@@ -156,7 +158,7 @@ def print_middle_numbers_with_tuple():
         if isinstance(result_tuple, tuple):
             # Convert tuple_str to a list and sort it
             copy_of_t = list(result_tuple)
-            choice = input("Do you want to sort the numbers? (yes/no): ")
+            choice = input("Do you want to use  the sort function? (yes/no): ")
             if choice.lower() == "yes":
                 copy_of_t = with_sort(copy_of_t)
             else:
