@@ -8,7 +8,7 @@ def pentaNumRange(n1, n2):
     return list(map(getPentalNum,range(n1,n2)))
 
 #1.2
-def nonFPenta():
+def nonFuncPenta():
     try:
         n1 = int(input("Enter n1: "))
         n2 = int(input("Enter n2: "))
@@ -37,13 +37,26 @@ def functionalPenta(n1, n2):
 
 def recursivePrint(myList):
     if len(myList)<=10:
-        print myList
+        print (myList)
         return
-    print myList[:10]
+    print (myList[:10])
     recursivePrint(myList[10:])
+    return
+
+
+def functionalPentaRange():
+    n1 = int(input("Enter the value of n1: "))
+    n2 = int(input("Enter the value of n2: "))
+    if not checkNumbers(n1,n2):
+        print("ERROR: the values must be positive integers and n2 > n1")
+        return
+    else:
+        myList = functionalPenta(n1, n2)
+        recursivePrint(myList)
 
 
 
+functionalPentaRange()
 
 
 
