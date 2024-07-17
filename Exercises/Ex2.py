@@ -2,7 +2,7 @@ from functools import reduce
 
 
 # Exercise 2 in Functional programming
-# Moshe Yaakov Cohen 324692680
+
 
 # Question 1
 
